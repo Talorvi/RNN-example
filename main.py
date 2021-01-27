@@ -108,7 +108,7 @@ tf.exp(mean_loss).numpy()
 model.compile(optimizer='adam', loss=loss)
 checkpoint_dir = './training_checkpoints'
 checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt_{epoch}")
-checkpoint_callback = ModelCheckpoint('./models/model', monitor='loss', save_best_only=True)
+#checkpoint_callback = ModelCheckpoint('./models/model', monitor='loss', save_best_only=True)
 
 EPOCHS = 60
 
